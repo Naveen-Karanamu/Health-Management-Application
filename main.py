@@ -41,6 +41,13 @@ def client_name_selection():
             else:
                 print("Invalid client file operation ⚠️, Please select from the given client id's!")
                 
+            end=int(input("Select '1' if you want to again look into the files or select '2' to exit the Application 🙂"))
+            if(end==1):
+                client_name_selection()
+            elif(end==2):
+                print("Thank you using our Application! Bye Bye 👋🏼")
+                exit
+                
                 
         file_operation_selection()
             
